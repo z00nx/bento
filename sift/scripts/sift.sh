@@ -11,6 +11,6 @@ mv sift-cli-linux sift
 chmod +x sift
 rm sift-cli-linux.sha256.asc
 apt-get purge -y jq
-apt-get autoremove --purge
+apt-get autoremove -y --purge
 sift install --user=vagrant --mode=packages-only
 rm -rf /var/cache/sift
